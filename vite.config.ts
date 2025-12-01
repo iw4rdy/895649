@@ -10,7 +10,7 @@ export default defineConfig({
   //
   // If you host at the domain root (e.g. https://example.com/), you can
   // change this back to '/'.
-  base: '/sentrix-cybersecurity/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
