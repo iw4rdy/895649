@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: theme('colors.foreground');
+    background-color: theme('colors.background');
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 15% 20%, rgba(239, 68, 68, 0.2), transparent 45%), radial-gradient(circle at 80% 0%, rgba(15, 23, 42, 0.8), transparent 40%), linear-gradient(120deg, rgba(5, 5, 5, 1), rgba(15, 15, 15, 0.88));
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  a {
+    @apply text-primary hover:text-primary-light transition-colors;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-sm uppercase tracking-[0.4em] text-primary/70 font-semibold;
+    letter-spacing: 0.4em;
+  }
+
+  .glass {
+    backdrop-filter: blur(20px);
+    background: rgba(12, 12, 12, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}

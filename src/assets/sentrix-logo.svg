@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sentrixLogoTitle">
+  <title id="sentrixLogoTitle">Sentrix AI</title>
+  <rect width="512" height="512" rx="32" ry="32" fill="#050505" />
+  <g fill="none" stroke="#72b8ff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 108 122 346" />
+    <path d="M256 108 390 346" />
+    <path d="M162 346h188" />
+  </g>
+  <text
+    x="50%"
+    y="430"
+    font-family="'Space Grotesk', 'Segoe UI', Arial, sans-serif"
+    font-size="72"
+    fill="#ffffff"
+    text-anchor="middle"
+    font-weight="600"
+  >
+    Sentrix AI
+  </text>
+</svg>
+
