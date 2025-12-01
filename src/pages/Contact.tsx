@@ -32,7 +32,7 @@ const Contact = () => {
 
     try {
       setIsSubmitting(true)
-      const response = await fetch(FORM_ENDPOINT, {
+      await fetch(FORM_ENDPOINT, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -40,15 +40,11 @@ const Contact = () => {
         body: formData,
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to submit')
-      }
-
       event.currentTarget.reset()
       toast({
         variant: 'success',
         title: 'Request received',
-        description: 'We’ll respond within a few hours with next steps.',
+        description: "We'll respond within a few hours with next steps.",
       })
     } catch (error) {
       console.error(error)
